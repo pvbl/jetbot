@@ -9,15 +9,17 @@
       
       
       
-        <link rel="prev" href="../software_setup/wifi_setup.html">
+        <link rel="prev" href="docker.html">
       
+      
+        <link rel="next" href="../examples/basic_motion.html">
       
       <link rel="icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
-        <title>Docker Tips - JetBot</title>
+        <title>Native setup from scratch (No docker) - JetBot</title>
       
     
     
@@ -81,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker-tips" class="md-skip">
+        <a href="#native-jetbot-setup-without-docker" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker Tips
+              Native setup from scratch (No docker)
             
           </span>
         </div>
@@ -286,16 +288,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
       
@@ -304,7 +306,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Software Setup
@@ -317,7 +319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software_setup/sd_card.html" class="md-nav__link">
+      <a href="sd_card.html" class="md-nav__link">
         Using SD Card Image
       </a>
     </li>
@@ -331,7 +333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software_setup/docker.html" class="md-nav__link">
+      <a href="docker.html" class="md-nav__link">
         Using Docker Container
       </a>
     </li>
@@ -343,11 +345,86 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../software_setup/native_setup.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Native setup from scratch (No docker)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="native_setup.html" class="md-nav__link md-nav__link--active">
         Native setup from scratch (No docker)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    Instructions
+  </a>
+  
+    <nav class="md-nav" aria-label="Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-install-dependencies" class="md-nav__link">
+    Step 1 - Install dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-set-the-jupyter-lab-password" class="md-nav__link">
+    Step 2 - Set the Jupyter lab password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-create-a-system-service-to-start-the-jupyter-lab-server-at-boot" class="md-nav__link">
+    Step 3 - Create a system service to start the Jupyter Lab server at boot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-create-system-service-to-show-the-ip-address-upon-boot" class="md-nav__link">
+    Step 4 - Create system service to show the IP address upon boot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -486,16 +563,16 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
       
       
       
@@ -504,7 +581,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Reference
@@ -573,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software_setup/wifi_setup.html" class="md-nav__link">
+      <a href="wifi_setup.html" class="md-nav__link">
         Wi-Fi setup
       </a>
     </li>
@@ -585,73 +662,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Docker Tips
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="docker_tips.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../reference/docker_tips.html" class="md-nav__link">
         Docker Tips
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#establishing-access-to-the-docker-host-terminal" class="md-nav__link">
-    Establishing access to the Docker host terminal
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-nvidia-gpu-cloud-ngc" class="md-nav__link">
-    Using Nvidia GPU Cloud (NGC)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-custom-jupyter-lab-workspace-directory" class="md-nav__link">
-    Using custom Jupyter Lab workspace directory
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#disabling-containers" class="md-nav__link">
-    Disabling containers
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -690,30 +705,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#establishing-access-to-the-docker-host-terminal" class="md-nav__link">
-    Establishing access to the Docker host terminal
+  <a href="#instructions" class="md-nav__link">
+    Instructions
+  </a>
+  
+    <nav class="md-nav" aria-label="Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-install-dependencies" class="md-nav__link">
+    Step 1 - Install dependencies
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#using-nvidia-gpu-cloud-ngc" class="md-nav__link">
-    Using Nvidia GPU Cloud (NGC)
+        
+          <li class="md-nav__item">
+  <a href="#step-2-set-the-jupyter-lab-password" class="md-nav__link">
+    Step 2 - Set the Jupyter lab password
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#using-custom-jupyter-lab-workspace-directory" class="md-nav__link">
-    Using custom Jupyter Lab workspace directory
+        
+          <li class="md-nav__item">
+  <a href="#step-3-create-a-system-service-to-start-the-jupyter-lab-server-at-boot" class="md-nav__link">
+    Step 3 - Create a system service to start the Jupyter Lab server at boot
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#disabling-containers" class="md-nav__link">
-    Disabling containers
+        
+          <li class="md-nav__item">
+  <a href="#step-4-create-system-service-to-show-the-ip-address-upon-boot" class="md-nav__link">
+    Step 4 - Create system service to show the IP address upon boot
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -735,51 +763,141 @@
   
 
 
-<h1 id="docker-tips">Docker Tips</h1>
-<p>This page provides various information related to using docker with JetBot.</p>
-<h2 id="establishing-access-to-the-docker-host-terminal">Establishing access to the Docker host terminal</h2>
-<p>The Jupyter Lab is running in the Docker container, thus the <strong>Terminal</strong> you open on Jupyter Lab only have access to the container environment.<br>
-This means you cannot use commands like <code>nvpmodel</code>, <code>tegrastats</code>, <code>journalctl</code>, <code>systemctl</code> and others.</p>
-<p>To get around this limitation, you can actually SSH in to the Docker host machine by;</p>
-<div class="highlight"><pre><span></span><code>ssh jetbot@0.0.0.0
+<h1 id="native-jetbot-setup-without-docker">Native JetBot Setup (without Docker)</h1>
+<p>This page details how you can configure your Jetson system to use JetBot without Docker.  This is handy when you want to prototype without worrying about docker semantics, or have other reasons to work outside of a docker environment</p>
+<blockquote>
+<p>If you see any issues with these instructions or have any questions, please feel free to open an issue on github <a href="https://github.com/NVIDIA-AI-IOT/jetbot/issues">here</a>.</p>
+</blockquote>
+<h2 id="instructions">Instructions</h2>
+<h3 id="step-1-install-dependencies">Step 1 - Install dependencies</h3>
+<ol>
+<li>Install NVIDIA JetPack, including NVIDIA TensorRT following <a href="https://developer.nvidia.com/embedded/jetpack">these instructions</a>.</li>
+<li>Install PyTorch following <a href="https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-11-now-available/72048">this guide</a> provided on the NVIDIA devtalk forums.</li>
+<li>
+<p>Install Node JS to support Jupyter Lab</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sL<span class="w"> </span>https://deb.nodesource.com/setup_10.x<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>-
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>nodejs<span class="w"> </span>libffi-dev
 </code></pre></div>
-<p><img src="../images/docker_host_ssh_login_cropped.png"  ></p>
-<h2 id="using-nvidia-gpu-cloud-ngc">Using Nvidia GPU Cloud (NGC)</h2>
-<p>The standard JetBot containers are hosted on docker hub, but for development or testing purposes, you may wish to use Nvidia GPU Cloud. To access containers on NGC, you need to sign into the NGC registry. To do this:</p>
-<ol>
-<li>
-<p>Log into ngc.nvidia.com</p>
 </li>
 <li>
-<p>Generated your API Key</p>
-<ol>
-<li>Navigate to Setup &gt; API Key</li>
-<li>Click on "Generate API Key" at the right upper corner of the page</li>
-<li>Copy the API key for future use</li>
+<p>Install Jupyter Lab to support web-programming JetBot</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>jupyter<span class="w"> </span>jupyterlab
+jupyter<span class="w"> </span>labextension<span class="w"> </span>install<span class="w"> </span>@jupyter-widgets/jupyterlab-manager
+</code></pre></div>
+</li>
+<li>
+<p>Install Jupyter Clickable Image widget (to support road following example).</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>libssl1.0-dev<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/jaybdub/jupyter_clickable_image_widget<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+<span class="nb">cd</span><span class="w"> </span>jupyter_clickable_image_widget<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+git<span class="w"> </span>checkout<span class="w"> </span>tags/v0.1<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+sudo<span class="w"> </span>pip3<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+jupyter<span class="w"> </span>labextension<span class="w"> </span>install<span class="w"> </span>js<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+jupyter<span class="w"> </span>lab<span class="w"> </span>build
+<span class="nb">cd</span><span class="w"> </span>..
+</code></pre></div>
+</li>
+<li>
+<p>Install other miscellaneous dependencies</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>supervisor<span class="w"> </span>unzip
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>python3-smbus<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>pip3<span class="w"> </span>install<span class="w"> </span>pyzmq
+</code></pre></div>
+</li>
+<li>
+<p>(optional) Install torch2trt to support TensorRT accelerated AI models</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/NVIDIA-AI-IOT/torch2trt
+<span class="nb">cd</span><span class="w"> </span>torch2trt
+python3<span class="w"> </span>setup.py<span class="w"> </span>install
+<span class="nb">cd</span><span class="w"> </span>..
+</code></pre></div>
+</li>
+<li>
+<p>Install the JetBot Python package</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/NVIDIA-AI-IOT/jetbot
+<span class="nb">cd</span><span class="w"> </span>jetbot
+sudo<span class="w"> </span>python3<span class="w"> </span>setup.py<span class="w"> </span>install
+<span class="c1"># if you plan to modify the jetbot python package, call this instead: sudo python3 setup.py develop</span>
+</code></pre></div>
+</li>
 </ol>
-</li>
+<h3 id="step-2-set-the-jupyter-lab-password">Step 2 - Set the Jupyter lab password</h3>
+<p>Call the following from a terminal
+<div class="highlight"><pre><span></span><code>jupyter<span class="w"> </span>notebook<span class="w"> </span>password
+<span class="c1"># enter password</span>
+</code></pre></div></p>
+<p>You could now test the JetBot notebooks by running</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>jetbot
+jupyter<span class="w"> </span>lab<span class="w"> </span>--ip<span class="o">=</span><span class="m">0</span>.0.0.0<span class="w"> </span>--no-browser<span class="w"> </span>--allow-root
+</code></pre></div>
+<p>and then navigating to <code>https://&lt;jetbot_ip&gt;:8888</code> and signing in with the password you set.</p>
+<p>However, it is convenient to have this server start automatically, which we will detail next.</p>
+<h3 id="step-3-create-a-system-service-to-start-the-jupyter-lab-server-at-boot">Step 3 - Create a system service to start the Jupyter Lab server at boot</h3>
+<ol>
 <li>
-<p>On your Jetson, sign into the NGC registry using the generated key</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>docker<span class="w"> </span>login<span class="w"> </span>nvcr.io
+<p>Create file named <code>jetbot_jupyter.service</code> and add the following content.  </p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>Unit<span class="o">]</span>
+<span class="nv">Description</span><span class="o">=</span>Jupyter<span class="w"> </span>Notebook<span class="w"> </span>
 
-Username:<span class="w"> </span><span class="nv">$oauthtoken</span>
-Password:<span class="w"> </span>&lt;Your<span class="w"> </span>Generated<span class="w"> </span>Key&gt;
+<span class="o">[</span>Service<span class="o">]</span>
+<span class="nv">Type</span><span class="o">=</span>simple
+<span class="nv">User</span><span class="o">=</span>jetson
+<span class="nv">ExecStart</span><span class="o">=</span>/bin/sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;jupyter lab --ip=0.0.0.0 --no-browser --allow-root&quot;</span>
+<span class="nv">WorkingDirectory</span><span class="o">=</span>/home/jetson
+<span class="nv">Restart</span><span class="o">=</span>Always
+
+<span class="o">[</span>Install<span class="o">]</span>
+<span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</code></pre></div>
+<blockquote>
+<p>Note: If you have a username other than "jetson" or want to launch Jupyter from a directory other than "/home/jetson", modify the file "User" and "WorkingDirectory" fields accordingly.</p>
+</blockquote>
+</li>
+<li>
+<p>Copy the file to the directory <code>/etc/systemd/system</code> so it can be discovered as a system service.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>cp<span class="w"> </span>jetbot_jupyter.service<span class="w"> </span>/etc/systemd/system/jetbot_jupyter.service
+</code></pre></div>
+</li>
+<li>
+<p>Enable the system service to run at boot</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>jetbot_jupyter
 </code></pre></div>
 </li>
 </ol>
-<p>For the username, enter <code>$oauthtoken</code> exactly as shown. It is a special authentication token for all users.</p>
-<h2 id="using-custom-jupyter-lab-workspace-directory">Using custom Jupyter Lab workspace directory</h2>
-<p>The argument you provide to the enable.sh script is mounted as a volume inside the docker container. Inside the docker container, this volume is located at /workspace. Any changes that you make inside this directory will be saved outside of the docker container. To use a different directory as the workspace for the Jupyter contianer, just provide the path as an argument when calling enable.sh. For example, to set the workspace to your home directory, you would do</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>jetbot/docker
-./enable.sh<span class="w"> </span><span class="nv">$HOME</span>
+<p>Now, when you re-boot your Jetson, the Jupyter lab server should start in the background.  </p>
+<p>That's great, but in order to connect to the server, you need to know it's IP address.  The last step will be to enable a system service that displays the IP address on the JetBot's PiOLED display upon boot.</p>
+<h3 id="step-4-create-system-service-to-show-the-ip-address-upon-boot">Step 4 - Create system service to show the IP address upon boot</h3>
+<p>This is very similar to creating a service for the Jupyter Lab server, we're just changing the application that's launched</p>
+<ol>
+<li>
+<p>Create a file named <code>jetbot_display.service</code> and add the following content.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>Unit<span class="o">]</span>
+<span class="nv">Description</span><span class="o">=</span>Jupyter<span class="w"> </span>Notebook<span class="w"> </span>
+
+<span class="o">[</span>Service<span class="o">]</span>
+<span class="nv">Type</span><span class="o">=</span>simple
+<span class="nv">User</span><span class="o">=</span>jetson
+<span class="nv">ExecStart</span><span class="o">=</span>/bin/sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;python3 -m jetbot.apps.stats&quot;</span>
+<span class="nv">WorkingDirectory</span><span class="o">=</span>/home/jetson
+<span class="nv">Restart</span><span class="o">=</span>Always
+
+<span class="o">[</span>Install<span class="o">]</span>
+<span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
 </code></pre></div>
-<h2 id="disabling-containers">Disabling containers</h2>
-<p>Once you execute the <code>enable.sh</code> script, the containers are set to restart automatically.
-This means you can shut down your Jetson, and when you reboot the containers will run and you don't need to repeat this process. </p>
-<p>To prevent the containers from starting automatically, just call the disable.sh script.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/jetbot/docker
-./disable.sh
+</li>
+<li>
+<p>Copy the file to the directory <code>/etc/systemd/system</code> so it can be discovered as a system service.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>cp<span class="w"> </span>jetbot_display.service<span class="w"> </span>/etc/systemd/system/jetbot_display.service
 </code></pre></div>
+</li>
+<li>
+<p>Enable the system service to run at boot</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>jetbot_display
+</code></pre></div>
+</li>
+</ol>
+<p>That's it!  Now you should be able to reboot the JetBot, and it's IP address should automatically show up on the PiOLED display.</p>
+<p>We hope this helps you create a custom native system configuration for using JetBot.  If you have any questions or see any issues with this guide, please <a href="https://github.com/NVIDIA-AI-IOT/jetbot/issues">create an issue on GitHub</a>.</p>
+<p>Happy hacking!</p>
 
 
   
